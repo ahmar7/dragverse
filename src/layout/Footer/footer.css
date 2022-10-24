@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "General Sans";
+  src: url("../../assets/fonts/GeneralSans-Variable.ttf") format("truetype");
+
+  font-display: swap;
+  font-style: normal;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 120px;
+  background: #1b1b1b;
+}
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  filter: drop-shadow(0px 12px 32px rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+}
+.footer-block img {
+  isolation: isolate;
+
+  width: 72px;
+  height: 72px;
+}
+.social-detail {
+  margin-left: 20px;
+}
+.social-detail h3 {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  line-height: 38px;
+  color: #ffffff;
+}
+.social-detail p {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #cfd8dc;
+  margin: 0;
+
+  margin-top: 10px !important;
+  margin-bottom: 35px !important;
+}
+.social-detail a {
+  padding: 14px 28px;
+
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: white;
+}
+.f-mar {
+  margin-left: 40px;
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 80px;
+  }
+  .social-detail h3 {
+    font-size: 25px;
+  }
+  .social-detail a {
+    padding: 10px 23px;
+  }
+}
+@media (max-width: 920px) {
+  .footer {
+    padding: 58px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .f-mar {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+  .footer-block img {
+    isolation: isolate;
+    width: 53px;
+  }
+  .footer {
+    padding: 34px;
+  }
+}
+@media (max-width: 400px) {
+  .social-detail h3 {
+    font-size: 20px;
+  }
+  .social-detail p {
+    font-size: 14px;
+
+    margin-top: 1px !important;
+    margin-bottom: 24px !important;
+  }
+  .social-detail a {
+    padding: 9px 14px;
+  }
+  .footer {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding: 40px;
+  }
+}
