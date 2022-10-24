@@ -1,4 +1,3 @@
+import MintBg from "../../assets/img/Mint.png";
 ///////////////////////////////////////////////////// Collection Images
-// export {
-
-// };
+export { MintBg };

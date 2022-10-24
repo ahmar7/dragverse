@@ -1,7 +1,11 @@
 import React from "react";
-
+import "./mint.css";
 const Mint = () => {
-  return <div></div>;
+  return (
+    <div className="main-container">
+      <div className="mint-main"></div>
+    </div>
+  );
 };
 
 export default Mint;
