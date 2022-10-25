@@ -1,12 +1,91 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mint-main {
+    position: relative;
+}
+
+p, h3, h2, h1, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
 .mint-main {
     background-image: url(../../assets/img/Mint.png);
     /* background-size: 100%; */
-    min-height: 100vh;
-    background-position: bottom right;
 
+    /* background-position: bottom right; */
 
+    height: 120vh;
 
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.icon-bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* background-image: url(../../assets/img/icon-bg.png); */
+    background-color: #FD028A;
+    box-shadow: 0px 13px 30px rgba(0, 91, 227, 0.3);
+    border-radius: 30px;
+    padding: 15px;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.icon-bg img {
+    padding: 0 20px;
+    width: 60px;
+}
+
+.ico-bg {
+
+    display: inline;
+
+}
+
+
+
+.middle-icon {
+    border-left: 2px solid rgba(255, 245, 0, 1);
+    border-right: 2px solid rgba(255, 245, 0, 1);
+    /* box-shadow: #ff0321 -20px 0px 20px, #ff0321 20px 0px 56px 0px, #ff0321 -20px 1px 80px 0px; */
+    box-shadow: #ff0321 1px -1px 20px 0px, #ff0321 0px 1px 11px 0px, #ff0321 2px -2px 80px 0px;
+    background: #ff0321b5;
+    /* box-shadow: #FF0321;
+    filter: blur(20px); */
+    /* box-shadow: #FF0321 0px 22px 70px 4px; */
+}
+
+.side-icon {
+    opacity: 0.4;
+}
+
+.icon-area {
+    text-align: center;
+}
+
+.icon-area p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* or 18px */
+
+    text-align: center;
+
+    color: #FFFFFF;
 }
