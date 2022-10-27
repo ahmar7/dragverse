@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./mint.css";
+
 import {
   Line,
   MintIcon,
@@ -10,7 +10,7 @@ import {
   Minus,
   Plus,
 } from "../../utils/allImgs";
-const Mint = () => {
+const Stake = () => {
   return (
     <div className="main-container">
       <div className="mint-main">
@@ -47,16 +47,16 @@ const Mint = () => {
         </div>
         <div className="icon-bg">
           <div className="icon-area side-icon">
-            <Link to="staking">
-              <img src={MintIcon} alt="" />
-              <p>STAKING</p>
+            <Link to="/">
+              <img src={StakeIcon} alt="" />
+              <p>MINT</p>
             </Link>
           </div>
 
           <div className="icon-area middle-ico">
-            <Link to="/">
-              <img className="middle-icon" src={StakeIcon} alt="" />
-              <p>MINT</p>
+            <Link to="staking">
+              <img className="middle-icon" src={MintIcon} alt="" />
+              <p>STAKING</p>
             </Link>
           </div>
           <div className="icon-area sp side-icon">
@@ -71,4 +71,4 @@ const Mint = () => {
   );
 };
 
-export default Mint;
+export default Stake;
