@@ -54,7 +54,7 @@ const Stake = () => {
           </div>
 
           <div className="icon-area middle-ico">
-            <Link to="staking">
+            <Link to="/staking">
               <img className="middle-icon" src={MintIcon} alt="" />
               <p>STAKING</p>
             </Link>

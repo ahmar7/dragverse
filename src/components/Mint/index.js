@@ -47,7 +47,7 @@ const Mint = () => {
         </div>
         <div className="icon-bg">
           <div className="icon-area side-icon">
-            <Link to="staking">
+            <Link to="/staking">
               <img src={MintIcon} alt="" />
               <p>STAKING</p>
             </Link>
