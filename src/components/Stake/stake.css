@@ -1,0 +1,33 @@
+.side-logo img {
+    width: 220px;
+}
+
+.side-logo {
+    position: absolute;
+    top: 25px;
+    left: 28px;
+
+    /* margin-top: 20px;
+    margin-left: 30px; */
+}
+
+.staking-btn {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.staking-btn button {
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    padding: 8px 20px;
+    width: 250px;
+    outline: none;
+    color: white;
+    background-color: #182A42;
+    font-family: 'Jockey One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+}
