@@ -7,6 +7,15 @@ import Line from "../../assets/img/Line 1.png";
 import Logo from "../../assets/img/dragu-logo.png";
 import Minus from "../../assets/img/minus.png";
 import Plus from "../../assets/img/plus.png";
+import Card1 from "../../assets/img/card1.png";
+import Card2 from "../../assets/img/card2.png";
+import Card3 from "../../assets/img/card3.png";
+import Card4 from "../../assets/img/card4.png";
+import Card5 from "../../assets/img/card5.png";
+import Card6 from "../../assets/img/card6.png";
+import Card7 from "../../assets/img/card7.png";
+import Card8 from "../../assets/img/card8.png";
+import LockIcon from "../../assets/img/lock.png";
 ///////////////////////////////////////////////////// Collection Images
 export {
   MintBg,
@@ -18,4 +27,13 @@ export {
   Logo,
   Minus,
   Plus,
+  Card1,
+  Card2,
+  Card3,
+  Card4,
+  Card5,
+  Card6,
+  Card7,
+  Card8,
+  LockIcon,
 };

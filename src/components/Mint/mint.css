@@ -38,7 +38,7 @@
      border-radius: 30px;
      padding: 15px;
      left: 50%;
-
+     z-index: 99;
      transform: translate(-50%, -50%);
  }
 
