@@ -15,7 +15,9 @@ import Card5 from "../../assets/img/card5.png";
 import Card6 from "../../assets/img/card6.png";
 import Card7 from "../../assets/img/card7.png";
 import Card8 from "../../assets/img/card8.png";
+import Plnt from "../../assets/img/plnt.png";
 import LockIcon from "../../assets/img/lock.png";
+import Cross from "../../assets/img/cross.png";
 ///////////////////////////////////////////////////// Collection Images
 export {
   MintBg,
@@ -36,4 +38,6 @@ export {
   Card7,
   Card8,
   LockIcon,
+  Plnt,
+  Cross,
 };

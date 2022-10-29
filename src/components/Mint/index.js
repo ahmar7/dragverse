@@ -8,6 +8,7 @@ import {
   MarketIcon,
   Logo,
   Minus,
+  Cross,
   Plus,
 } from "../../utils/allImgs";
 const Mint = () => {
@@ -67,6 +68,30 @@ const Mint = () => {
           </div>
         </div>
       </div>
+      {/* Modal mobile*/}
+
+      <div className="show-it modal">
+        <div className="overlay  "></div>
+        <div className="modal-content">
+          <h2 className="modal-head">Draguverse</h2>
+          <div className="modal-detail">
+            <p>
+              We are waiting for our smartcontract
+              <br /> audits before fully releasing this <br /> component of the
+              app!
+            </p>
+            <div className="modal-btns">
+              <button>Ok</button>
+              <button>Close</button>
+            </div>
+          </div>
+          <div className="close-modal">
+            <img src={Cross} />
+          </div>
+        </div>
+      </div>
+
+      {/* Modal mobile*/}
     </div>
   );
 };

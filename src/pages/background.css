@@ -26,7 +26,20 @@
     background-repeat: no-repeat;
 }
 
+.market-bg {
 
+    background-image: url(../assets/img/Marketplace.png);
+    /* background-size: 100%; */
+
+    /* background-position: bottom right; */
+
+    min-height: 100vh;
+
+
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 @media (min-width:1200px) {
     .mint-pg {
@@ -42,6 +55,8 @@
         min-height: 140vh;
 
     }
+
+
 }
 
 @media (min-width:1600px) {
@@ -56,6 +71,8 @@
 
         min-height: 130vh;
     }
+
+
 }
 
 @media (min-width:1700px) {
@@ -64,6 +81,8 @@
 
         min-height: 100vh;
     }
+
+
 
     .stake-pg {
 

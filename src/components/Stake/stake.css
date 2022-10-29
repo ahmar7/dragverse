@@ -34,13 +34,14 @@
 
 .cards {
     display: flex;
+
     flex-wrap: wrap;
     width: 85vw;
     height: 70vh;
     overflow: auto;
     margin: 0 auto;
     justify-content: center;
-    margin-top: 30px !important;
+    margin-top: 30px;
 }
 
 .single-card {
@@ -160,6 +161,8 @@
     font-size: 21px;
 }
 
+
+
 /* width */
 .cards::-webkit-scrollbar {
     width: 4px;
@@ -174,4 +177,16 @@
 /* Handle */
 .cards::-webkit-scrollbar-thumb {
     background: #FD028A;
+}
+
+@media(max-width:1200px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+
+    .single-card {
+        width: 35%;
+    }
 }

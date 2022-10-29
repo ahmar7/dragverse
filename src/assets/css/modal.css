@@ -1,0 +1,162 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.modal {
+    top: 0;
+    z-index: 9999999999;
+}
+
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+
+    animation: overlaydown 0.3s both !important;
+}
+
+.overlayup {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 200px;
+    /* position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%; */
+    padding: 15px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(255, 255, 255, 0.45) 100%), #5C6DE0;
+    background-blend-mode: soft-light, normal;
+    border-radius: 16px;
+}
+
+.modal-detail {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%,
+            rgba(255, 255, 255, 0.25) 100%), #38469E;
+    background-blend-mode:
+        soft-light, normal;
+    border-radius: 8px;
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.modal-detail p {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 4px rgba(91, 26, 26, 0.14), 0px 3px 4px rgba(123, 12, 12, 0.12), 0px 1px 5px rgba(136, 13, 13, 0.2);
+}
+
+.modal-btns {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.modal-btns button {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #FFAE02;
+    background-blend-mode: soft-light, normal;
+    border-radius: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    border: 2px solid rgb(31, 30, 30);
+    font-size: 25px;
+    /* identical to box height */
+    padding: 2px 0;
+    width: 120px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 4px rgba(91, 26, 26, 0.14), 0px 3px 4px rgba(123, 12, 12, 0.12), 0px 1px 5px rgba(136, 13, 13, 0.2);
+}
+
+.close-modal {
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    right: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Modal Content */
+
+.modal-head {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 4px rgba(91, 26, 26, 0.14), 0px 3px 4px rgba(123, 12, 12, 0.12), 0px 1px 5px rgba(136, 13, 13, 0.2);
+}
+
+.hide-it {
+    display: none !important;
+}
+
+.show-it {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .show-it {
+        display: block !important;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal-content {
+        width: 310px;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-content {
+        width: 295px;
+        height: 220px;
+    }
+}
+
+/* Modal Content */

@@ -1,4 +1,5 @@
 import "./assets/css/style.css";
+import "./assets/css/modal.css";
 import Routerapp from "./config/Router";
 function App() {
   return (

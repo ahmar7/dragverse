@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./stake.css";
 import { stakingData } from "../../Data/stakingCard";
@@ -12,9 +12,19 @@ import {
   Minus,
   Plus,
   Card1,
+  Cross,
   LockIcon,
 } from "../../utils/allImgs";
 const Stake = () => {
+  const [modal, setModal] = useState(true);
+  const closeModal = () => {
+    setModal(false);
+  };
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
   return (
     <div className="main-container">
       <div className="main-staking">
@@ -85,6 +95,54 @@ const Stake = () => {
           </div>
         </div>
       </div>
+      {/* Modal */}
+
+      <div className={modal ? "modal" : "modal hide-it "}>
+        <div className="overlay  "></div>
+        <div className="modal-content">
+          <h2 className="modal-head">Draguverse</h2>
+          <div className="modal-detail">
+            <p>
+              We are waiting for our smartcontract
+              <br /> audits before fully releasing this <br /> component of the
+              app!
+            </p>
+            <div className="modal-btns">
+              <button onClick={closeModal}>Ok</button>
+              <button onClick={closeModal}>Close</button>
+            </div>
+          </div>
+          <div className="close-modal" onClick={closeModal}>
+            <img src={Cross} />
+          </div>
+        </div>
+      </div>
+
+      {/* Modal */}
+      {/* Modal mobile*/}
+
+      <div className="show-it modal">
+        <div className="overlay  "></div>
+        <div className="modal-content">
+          <h2 className="modal-head">Draguverse</h2>
+          <div className="modal-detail">
+            <p>
+              We are waiting for our smartcontract
+              <br /> audits before fully releasing this <br /> component of the
+              app!
+            </p>
+            <div className="modal-btns">
+              <button>Ok</button>
+              <button>Close</button>
+            </div>
+          </div>
+          <div className="close-modal">
+            <img src={Cross} />
+          </div>
+        </div>
+      </div>
+
+      {/* Modal mobile*/}
     </div>
   );
 };
