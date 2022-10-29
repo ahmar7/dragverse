@@ -31,3 +31,19 @@
     font-weight: 400;
     font-size: 19px;
 }
+
+.cards {
+    display: flex;
+    width: 85vw;
+    border: 1px solid red;
+    height: 70vh;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 30px !important;
+}
+
+.single-card {
+    width: 25%;
+    border: 1px solid blue;
+    height: 100px;
+}

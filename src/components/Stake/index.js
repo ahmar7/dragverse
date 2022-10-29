@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./stake.css";
+import { stakingData } from "../../Data/stakingCard";
+
 import {
   Line,
   MintIcon,
@@ -22,6 +24,17 @@ const Stake = () => {
           <button>Not Staked</button>
         </div>
         <div className="cards">
+          {/* {
+              stakingData.map((item, key) => (
+
+          <div className="single-card"></div>
+              ))} */}
+          <div className="single-card">
+            <div className="thumbnail"></div>
+            <div className="card-detail"></div>
+          </div>
+          <div className="single-card"></div>
+          <div className="single-card"></div>
           <div className="single-card"></div>
         </div>
       </div>
